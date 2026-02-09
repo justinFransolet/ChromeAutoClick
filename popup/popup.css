@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #4a90e2;
+    --primary-hover: #357abd;
+    --danger-color: #e74c3c;
+    --danger-hover: #c0392b;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+body {
+    width: 250px;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.control-group {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#speedValue {
+    float: right;
+    color: var(--primary-color);
+}
+
+/* Style du curseur (range) */
+input[type=range] {
+    width: 100%;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#selectElement {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#selectElement:hover {
+    background-color: var(--primary-hover);
+}
+
+#stopClick {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+#stopClick:hover {
+    background-color: var(--danger-hover);
+}
+
+button:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
